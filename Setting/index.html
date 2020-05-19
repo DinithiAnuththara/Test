@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>User Setting</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<link rel="stylesheet" type="text/css" href="fontawasome/css/all.min.css">
+</head>
+<body>
+
+  <div class="container">
+  	<div class="leftbox">
+  		<nav>
+  			<a onclick="tabs(0)" class="tab active">
+  				<i class="fas fa-user"></i>
+  			</a>
+  			<a onclick="tabs(1)" class="tab">
+  				<i class="fas fa-comment-dots"></i>
+  			</a>	
+  		</nav>	
+  	</div>
+  	<div class="rightbox">
+  		<div class="profile tabshow">
+  			<h1>Personal Info</h1>
+  			<h2>Full Name</h2>
+  			<input type="text" class="input" value="Dinithi Anuththara">
+  			<h2>Birthday</h2>
+  			<input type="text" class="input" value="December 15,1997">
+  			<h2>Gender</h2>
+  			<input type="text" class="input" value="Female">
+  			<h2>Email</h2>
+  			<input type="text" class="input" value="anuththaraw97@gmail.com">
+  			<h2>Password</h2>
+  			<input type="password" class="input" value="brightcode">
+  			<button class="btn">Update</button>
+  			<h2>Delete Account</h2>
+  			<button class="btn">Disable</button>
+
+        </div>
+        <div class="Chat Setting">
+  			<h1>Chat Info</h1>
+  			<h2>Avatar</h2>
+  			<input type="text" class="input" value="Dinithi Anuththara">
+  			<h2>Colours</h2>
+  			<input type="text" class="input" value="December 15,1997">
+  			<h2>Font Size</h2>
+  			<input type="text" class="input" value="Female">
+  			<button class="btn">Save Changes</button>
+        </div>
+  	</div>
+  </div>
+
+
+
+
+   <script src="jquery/jquery.js"></script>
+   <script>
+   	    const tabBtn =
+   	    document.querySelectorAll(".tab"); 
+   	    const tab =
+   	    document.querySelectorAll(".tabShow"); 
+
+   	    function tabs(panelIndex){
+   	    	tab.forEach(function(node){
+   	    		node.style.display = "none";
+   	    	});
+   	    	tab[panelIndex].style.display = "block";
+   	    }
+   	    tabs(0);
+   </script>
+   <script>
+   	 $(".tab").click(functon(){
+   	 	$(this).addClass("active").siblin
+   	 	gs().removeClass("active");
+   	 })
+   </script>
+</body>
+</html>
